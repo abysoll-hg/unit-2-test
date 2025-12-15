@@ -18,7 +18,7 @@ public class KillCilantro {
       return returnStr;
    }
    public static void main(String[] Args) {
-      System.out.println(killWord("cilantro is very good cilantro cilantro","cilantro","fdsasadf"));
+      System.out.println(killWord("cilantro is very good cilantro cilantro","cilantro","fdsa"));
       System.out.println(killCilantro("cilantrois very good cilantro cilantro"));
 
    }
