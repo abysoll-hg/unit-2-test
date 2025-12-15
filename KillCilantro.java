@@ -1,15 +1,12 @@
 public class KillCilantro {
    public static String killCilantro(String recipe) {
-      String returnStr = "";
-      String tempStr = "";
-      for (int i = 0; i < recipe.length(); i++) {
-         if ((recipe.substring(i).contains("cilantro")) && (recipe.indexOf("c") + 7 == recipe.indexOf("o"))) {
-               for (int j = 0; j < 8; j++) {
-               
-               }
-         }
+      String returnStr = recipe;
+      int f = returnStr.indexOf("cilantro");
+      while (f != -1) {
+          returnStr = returnStr.substring(0,f) + "parsley" + returnStr.substring(f+8);
+          f = returnStr.indexOf("cilantro");
       }
-      return recipe;
+      return returnStr;
    }
    public static void main(String[] Args) {
       System.out.println(killCilantro("cilantro is very good cilantro cilantro"));
